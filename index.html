@@ -3,59 +3,96 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ksign Installer</title>
+<title>KSign Installer</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
+    background:#0b0b10;
+    color:white;
     font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    padding:20px;
+}
+
+.container{
     max-width:700px;
     margin:auto;
-    padding:20px;
-    text-align:center;
 }
 
 .card{
-    border:1px solid #ddd;
-    border-radius:16px;
+    background:#17171f;
+    border-radius:28px;
     padding:20px;
-    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    border-radius:22px;
+    object-fit:cover;
+}
+
+.title{
+    font-size:32px;
+    font-weight:700;
+}
+
+.cert{
+    color:#a0a0b0;
+    margin-top:6px;
+    font-size:18px;
 }
 
 .install{
-    display:inline-block;
-    padding:14px 28px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:bold;
     background:#007AFF;
     color:white;
-}
-
-.note{
-    margin-top:15px;
-    color:#666;
+    text-decoration:none;
+    padding:16px 32px;
+    border-radius:18px;
+    font-weight:700;
+    font-size:18px;
 }
 </style>
 </head>
 
 <body>
 
-<h1>KSign</h1>
+<div class="container">
 
 <div class="card">
 
-<h2>KSign 1.6</h2>
+<div class="left">
 
-<p>Sign and install KSign.</p>
+<img class="logo" src="IMG_0274.png" alt="KSign">
+
+<div>
+<div class="title">KSign</div>
+<div class="cert">Commission on Electronics</div>
+</div>
+
+</div>
 
 <a class="install"
-href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/arianyt03/KSign/main/ipa.plist">
-Install Ksign
+href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/arianyt03/poop/main/ipa.plist">
+INSTALL
 </a>
 
-<p class="note">
-Open this page in Safari and tap Install.
-</p>
+</div>
 
 </div>
 
